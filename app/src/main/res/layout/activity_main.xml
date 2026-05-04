@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:background="#a2a8d3"
+    android:layout_height="match_parent">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To-Do List"
+        android:gravity="center"
+        android:textColor="#113f67"
+        android:textSize="32sp"
+        android:paddingBottom="8dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold"/>
+    <EditText
+
+        android:id="@+id/editTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:backgroundTint="#e7eaf6"
+        android:hint="Enter New Task"
+        android:textColorHint="#38598B"
+        android:textColor="#113f67"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Add Task"
+        android:textColor="#E7EAF6"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#113f67"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"/>
+
+</LinearLayout>
